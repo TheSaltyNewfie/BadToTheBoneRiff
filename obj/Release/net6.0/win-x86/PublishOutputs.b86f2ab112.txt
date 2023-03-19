@@ -1,0 +1,2 @@
+C:\Users\tobyd\source\repos\BadToTheBoneRiff\bin\Release\net6.0\publish\win-x86\BadToTheBoneRiff.pdb
+C:\Users\tobyd\source\repos\BadToTheBoneRiff\bin\Release\net6.0\publish\win-x86\BadToTheBoneRiff.exe
