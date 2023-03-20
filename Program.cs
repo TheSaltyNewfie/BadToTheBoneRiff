@@ -16,11 +16,14 @@ namespace BadToTheBoneRiff
 
         static void Main(string[] args)
         {
-            AllocConsole();
+            if(args[0] == "noterminal")
+            {
+                AllocConsole();
 
-            IntPtr hwnd = FindWindow("ConsoleWindowClass", Console.Title);
+                IntPtr hwnd = FindWindow("ConsoleWindowClass", Console.Title);
 
-            ShowWindow(hwnd, 0);
+                ShowWindow(hwnd, 0);
+            }
 
             SoundPlayer player = new SoundPlayer(@"sound.wav");
 
@@ -35,6 +38,7 @@ namespace BadToTheBoneRiff
                 {
                     player.Play();
                     int randtime = rand.Next(300000, 1500000); // 5-25 minutes wait time
+                    Console.WriteLine(randtime);
                     Thread.Sleep(randtime);
                 }
             }
