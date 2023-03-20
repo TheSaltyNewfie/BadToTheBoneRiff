@@ -16,7 +16,7 @@ namespace BadToTheBoneRiff
 
         static void Main(string[] args)
         {
-            if(args[0] == "noterminal")
+            if(args[1] == "noterminal")
             {
                 AllocConsole();
 
